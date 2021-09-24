@@ -1,12 +1,18 @@
-def area(base,altura):
-    pass
+def area(base, altura):
+    areaBase = base * altura
+    return areaBase
 
-def volumen_prisma(base,altura,profundidad):
-    pass
+def volumen(base, altura, profundidad):
+    areaBase = area(base,altura)
+    volumen = areaBase * profundidad
+    return volumen
 
-def main():
-    #escribe tu código abajo de esta línea
-    pass
+base = float(input("Dame la base: "))
+altura = float(input("Dane la altura: "))
+profundidad = float(input("Dame la profundidad: "))
+areaBase = 0
+volumenPrisma = volumen(base, altura, profundidad)
+print("El volumen del prisma es:",volumenPrisma)
 
 if __name__=='__main__':
     main()
